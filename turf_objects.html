@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Booking</title>
+    <link rel="stylesheet" href="turf_objects.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/7b/ed/48/7bed48ff507ea3ccd4560244c8aa5811.jpg" alt="Turf Town Logo">
+            <button class="btn-header" onclick="window.location.href='http://127.0.0.1:5500/index.html';">Home</button>
+            <button class="btn-header">Contact</button>
+            <button class="btn-header">Help</button>
+        </div>
+        <div class="login-icon">
+            <a href="http://127.0.0.1:5500/login.html#">
+                <i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- Filter Section -->
+        <div class="filters-container">
+            <div class="filters">
+                <h3>GROUND TYPE</h3>
+                <label><input type="checkbox"> Court</label><br>
+                <label><input type="checkbox"> Soapy</label><br>
+                <label><input type="checkbox"> Public</label><br>
+                <label><input type="checkbox"> Grass</label><br>
+                <label><input type="checkbox"> Turf</label><br>
+
+                <h3>SELECT AREA</h3>
+                <label><input type="checkbox"> Bannerghatta</label><br>
+                <label><input type="checkbox"> Electronic City Phase 1</label><br>
+                <label><input type="checkbox"> Indiranagar</label><br>
+                <label><input type="checkbox"> K Channasandra</label><br>
+                <label><input type="checkbox"> K. R. Puram</label><br>
+                <label><input type="checkbox"> Kanakapura</label><br>
+                <label><input type="checkbox"> Kasavanahalli</label><br>
+                <label><input type="checkbox"> Kaverappa Layout</label><br>
+
+                <h3>COST</h3>
+                <label><input type="checkbox"> &lt; 1000</label><br>
+                <label><input type="checkbox"> 1000-2000</label><br>
+                <label><input type="checkbox"> 2000-3000</label><br>
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search For Location">
+                <button onclick="search()">Search</button>
+            </div>
+
+            <div class="card">
+                <img src="https://assets.telegraphindia.com/telegraph/2021/Sep/1630669298_sky-turf.jpg" alt="Turf 1">
+                <div class="card-body">
+                    <h2 class="card-title">Turf 1</h2>
+                    <h3 class="card-subtitle">Banashankari (~0.85 kms)</h3>
+                    <p class="card-text">Upto 22% off</p>
+                    <div class="card-footer">
+                        <div class="rating">4.18 (59)</div>
+                        <div class="price">INR 1000 Onwards</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://turftown.in/_next/image?url=https%3A%2F%2Fturftown.s3.ap-south-1.amazonaws.com%2Fsuper_admin%2Ftt-1717582629818.webp&w=3840&q=75" alt="Turf 2">
+                <div class="card-body">
+                    <h2 class="card-title">Turf 2</h2>
+                    <h3 class="card-subtitle">Banagiri Nagara (~1.13 kms)</h3>
+                    <div class="card-footer">
+                        <div class="rating">3.3 (112)</div>
+                        <div class="price">INR 800 Onwards</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/10/350327019/NU/WB/TZ/38215148/7-a-side-football-turf.jpg" alt="Turf 3">
+                <div class="card-body">
+                    <h2 class="card-title">Turf 3</h2>
+                    <h3 class="card-subtitle">JP nagar (~2.85 kms)</h3>
+                    <p class="card-text">Upto 22% off</p>
+                    <div class="card-footer">
+                        <div class="rating">4.58 (109)</div>
+                        <div class="price">INR 1200 Onwards</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://content3.jdmagicbox.com/comp/ernakulam/g5/0484px484.x484.190725005122.f3g5/catalogue/kick-off-football-turf-kalamassery-ernakulam-football-turf-grounds-4olaynabn9.jpg" alt="Turf 4">
+                <div class="card-body">
+                    <h2 class="card-title">Turf 4</h2>
+                    <h3 class="card-subtitle">Jaynagar (~1.85 kms)</h3>
+                    <p class="card-text">Upto 22% off</p>
+                    <div class="card-footer">
+                        <div class="rating">4 (119)</div>
+                        <div class="price">INR 950 Onwards</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/335757400/LF/CR/PE/5746244/football-truf-500x500.jpg" alt="Turf 5">
+                <div class="card-body">
+                    <h2 class="card-title">Turf 5</h2>
+                    <h3 class="card-subtitle">Basvangudi (~0.65 kms)</h3>
+                    <p class="card-text">Upto 22% off</p>
+                    <div class="card-footer">
+                        <div class="rating">3.18 (87)</div>
+                        <div class="price">INR 600 Onwards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Icon (Image) -->
+    <img src="https://st4.depositphotos.com/4177785/21347/v/450/depositphotos_213479600-stock-illustration-chatbot-chalk-icon-black-background.jpg" class="floating-icon" onclick="handleIconClick()" alt="Chatbot Icon">
+
+    <!-- Link to the external JavaScript file -->
+    <script src="turf_objects.js"></script>
+</body>
+</html>

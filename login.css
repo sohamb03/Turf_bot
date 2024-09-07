@@ -1,0 +1,122 @@
+/* Reset some default browser styles */
+body, h1, p, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    height: 70vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.left-section {
+    background: url('https://cdn.create.vista.com/api/media/small/242606068/stock-photo-silhouette-football-player-holding-ball-black-smoke') center center no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section .content {
+    text-align: center;
+    max-width: 300px;
+}
+
+.left-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 18px;
+}
+
+.right-section {
+    background-color: #121212;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00c2c2;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.social-media i:hover {
+    color: #00c2c2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    background-color: #2a2a2a;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+form input::placeholder {
+    color: #b0b0b0;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form button {
+    background-color: #00c2c2;
+    border: none;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00a0a0;
+}

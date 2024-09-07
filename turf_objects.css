@@ -1,0 +1,193 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text for readability */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.btn-header {
+    color: #9b59b6;
+    background: #000;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-header:hover {
+    background: #444;
+    color: #dcdcdc;
+}
+
+.login-icon {
+    margin-left: auto;
+}
+
+.login-icon a {
+    color: #9b59b6;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-icon a:hover {
+    color: #dcdcdc;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 10px;
+    left: -100px;
+}
+
+/* Left filter section */
+.filters-container {
+    width: 250px; /* Adjusted width for better fit */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    height: fit-content;
+    margin-left: -220px; 
+}
+
+/* Cards Section */
+.container {
+    flex: 1;
+    max-width: 750px; /* Adjusted max-width for better fit */
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 10px; /* Removed margin-left adjustment */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: #b0bec5;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer .rating {
+    background-color: #03dac6;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.card-footer .price {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 1000;
+}
